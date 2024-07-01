@@ -1,0 +1,108 @@
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+#leftside {
+    float:left;
+    width: 30%;
+    min-height: 1200px;
+    background-color:rgb(77, 192, 154);
+}
+#rightside {
+    float:left;
+    width: 70%;
+    min-height: 1200px;
+    background-color:rgb(238, 226, 192);
+    position:relative;
+}
+#container {
+    background-color:rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    min-width: 1100px;
+    min-height: 1050px;
+    border-radius: 0.7em;
+}
+header {
+    height: 120px;
+    background-color:rgba(231, 229, 229, 0.5);
+    font-size: 1.75em;
+    padding:0.5em;
+}
+header span {
+    font-family: 'Sacramento', cursive;
+    color:rgb(216, 150, 7);
+}
+.container-fluid{
+    height: 100px;
+}
+main {
+    position: relative;
+}
+main h2 {
+    position: absolute;
+    left: 20%;
+    top: 30px;
+    margin: 25px 0 200px 50px;
+    color:rgb(60, 190, 160);
+    text-transform: uppercase;
+}
+main #photos img {
+    margin: 0.75em;
+    border: 0.85em solid rgb(255, 255, 255);
+}
+section#blogposts {
+    position: absolute;
+    left: 20%;
+    top: 70px;
+    padding: 50px;
+}
+main .post {
+    margin: 25px;
+    padding: 25px;
+    border: 2px solid rgba(83, 78, 58, 0.6);
+    border-radius: 0.5em;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+/* Add CSS */
+.post img{
+    width: 45px;
+    height: 45px;
+}
+.floating-box {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 280px;
+    text-align: left;
+    
+}
+.floating-box h3,
+.floating-box p span
+{
+    font-weight: bold;
+}
+.floating-box h3{
+    font-size: 30px;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
